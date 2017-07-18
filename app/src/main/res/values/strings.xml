@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Manage</string>
+
+    <string name="main_card_title">标题</string>
+    <string name="main_card_title_short">标题</string>
+    <string name="main_card_subtitle">副标题</string>
+    <string name="main_card_details">详细信息</string>
+    <string name="main_card_button_1">报名</string>
+
+</resources>
