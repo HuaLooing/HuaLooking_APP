@@ -56,7 +56,7 @@ public class MyThread implements Runnable {
         try {
             Class.forName("com.mysql.jdbc.Driver");
             java.sql.Connection cn = null;
-            cn = DriverManager.getConnection("jdbc:mysql://192.168.123.32:3306/Demo", "root", "123456");
+            cn = DriverManager.getConnection("jdbc:mysql://250826a1.nat123.cc:48732/Demo", "root", "970527");
             sql = "insert into practical_participation values ('11111222','15416119','1','1')";
             st = (Statement) cn.createStatement();
             flag = st.executeUpdate(sql);

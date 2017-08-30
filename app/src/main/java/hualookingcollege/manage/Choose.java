@@ -37,10 +37,18 @@ public class Choose extends Activity {
 
 
 
+
+    public void onStart(){
+        super.onStart();
+    }
+
+
+
+
     private void initView() {
         recyclerView = (RecyclerView) findViewById(R.id.recyclerview_home);
         recyclerView.setLayoutManager(new StaggeredGridLayoutManager(1, StaggeredGridLayoutManager.VERTICAL));
-        MyAdapter adpter = new MyAdapter(list,Choose.this, R.layout.card_main_2);
+        MyAdapter_home adpter = new MyAdapter_home(list,Choose.this, R.layout.card_main_2);
         recyclerView.setAdapter(adpter);
         SpaceItemDecoration decoration = new SpaceItemDecoration(16);
         recyclerView.addItemDecoration(decoration);
@@ -90,6 +98,7 @@ public class Choose extends Activity {
                 Intent C = new Intent();
                 C.setClass(Choose.this, Card.class);
                 startActivity(C);
+                Choose.this.finish();
             }
         });
         tv_home.setOnClickListener(new View.OnClickListener() {

@@ -16,6 +16,8 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
+import static hualookingcollege.manage.R.layout.card;
+
 /**
  * Created by 13156 on 2017/7/29.
  */
@@ -36,11 +38,19 @@ public class Card extends Activity {
         Card.this.finish();
     }
 
+
+
+
+
+
+
+
     public void onCreate( Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.card);
+        setContentView(card);
         initData();
         initView();
+
         bottom();
 //        new Thread(new Runnable() {
 //
@@ -76,6 +86,9 @@ public class Card extends Activity {
 
     }
 
+    public void onStart(){
+        super.onStart();
+    }
 
     private void initView() {
         recyclerView = (RecyclerView) findViewById(R.id.recyclerview_list);
