@@ -15,4 +15,5 @@
     <color name="transparent">#00000000</color>
     <color name="main_background">#eeeeee</color>
     <color name="google_assistant_background">#F5F5F5</color>
+    <color name="blue">#0000FF</color>
 </resources>
